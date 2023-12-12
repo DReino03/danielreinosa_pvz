@@ -1,6 +1,6 @@
  
 
-
+> By Daniel Reinosa
 > Abra esta pagina en [https://dreino03.github.io/danielreinosa_pvz/](https://dreino03.github.io/danielreinosa_pvz/)
 
 ## Usar como extensión
