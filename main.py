@@ -61,7 +61,7 @@ def on_a_pressed():
                                             . . . f e e f e e f . . . . . .
                     """),
                     SpriteKind.shooter)
-                mySprite2.set_position(mySprite.x, mySprite.x)
+                mySprite2.set_position(mySprite.x, mySprite.y)
                 mySprite.set_image(img("""
                     1 1 1 1 . . . . . . . . 1 1 1 1 
                                         1 . . . . . . . . . . . . . . 1 
@@ -132,7 +132,7 @@ def on_a_pressed():
                                             . . . . f e e f e e f . . . . .
                     """),
                     SpriteKind.Plants)
-                mySprite3.set_position(mySprite.x, mySprite.x)
+                mySprite3.set_position(mySprite.x, mySprite.y)
                 mySprite.set_image(img("""
                     1 1 1 1 . . . . . . . . 1 1 1 1 
                                         1 . . . . . . . . . . . . . . 1 
@@ -203,7 +203,7 @@ def on_a_pressed():
                                             . . . f f f f f f f f f . . . .
                     """),
                     SpriteKind.wall)
-                mySprite4.set_position(mySprite.x, mySprite.x)
+                mySprite4.set_position(mySprite.x, mySprite.y)
                 mySprite.set_image(img("""
                     1 1 1 1 . . . . . . . . 1 1 1 1 
                                         1 . . . . . . . . . . . . . . 1 
