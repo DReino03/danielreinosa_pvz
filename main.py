@@ -203,7 +203,7 @@ def on_a_pressed():
                                             . . . f f f f f f f f f . . . .
                     """),
                     SpriteKind.wall)
-                mySprite4.set_position(mySprite., mySprite.y)
+                mySprite4.set_position(mySprite.x, mySprite.y)
                 mySprite.set_image(img("""
                     1 1 1 1 . . . . . . . . 1 1 1 1 
                                         1 . . . . . . . . . . . . . . 1 
