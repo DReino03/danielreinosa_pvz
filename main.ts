@@ -720,7 +720,7 @@ game.onUpdateInterval(2000, function on_update_interval2() {
                             . . . . . . . . . . . . . . . . 
                             . . . . . . . . . . . . . . . .
             `, SpriteKind.Projectile)
-        projectile.setPosition(value2.x, value2.x)
+        projectile.setPosition(value2.x, value2.y)
         projectile.setVelocity(50, 0)
         projectile.lifespan = 2000
     }

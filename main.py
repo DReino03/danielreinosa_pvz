@@ -711,7 +711,9 @@ def on_update_interval2():
                             . . . . . . . . . . . . . . . .
             """),
             SpriteKind.projectile)
-        projectile.set_position(value2., value2.)
+
+        projectile.set_position(value2.x, value2.y)
+
         projectile.set_velocity(50, 0)
         projectile.lifespan = 2000
 game.on_update_interval(2000, on_update_interval2)
