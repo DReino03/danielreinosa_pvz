@@ -81,7 +81,7 @@ def on_a_pressed():
                                         1 1 1 1 . . . . . . . . 1 1 1 1
                 """))
                 statusbar = statusbars.create(20, 4, StatusBarKind.health)
-                statusbar.max = 4
+                statusbar.ma = 4
                 statusbar.attach_to_sprite(mySprite2)
                 statusbar.set_flag(SpriteFlag.INVISIBLE, True)
                 info.change_score_by(-100)
@@ -152,7 +152,7 @@ def on_a_pressed():
                                         1 1 1 1 . . . . . . . . 1 1 1 1
                 """))
                 SunFlower_HP = statusbars.create(20, 4, StatusBarKind.health)
-                SunFlower_HP.max = 4
+                SunFlower_HP.ma = 4
                 SunFlower_HP.attach_to_sprite(mySprite3)
                 SunFlower_HP.set_flag(SpriteFlag.INVISIBLE, True)
                 Sunflower = 0
@@ -278,7 +278,7 @@ def wave1():
         SpriteKind.enemy)
     grid.snap(mySprite5)
     grid.place(mySprite5, tiles.get_tile_location(9, randint(1, 5)))
-    mySprite5.vx = -3
+    mySprite5.v = -3
     ZombieHp = statusbars.create(20, 4, StatusBarKind.enemy_health)
     ZombieHp.value = 10
     ZombieHp.attach_to_sprite(mySprite5)
@@ -459,7 +459,7 @@ scene.set_background_image(img("""
         7777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777
 """))
 pause(2000)
-story.print_character_text("Bienvenido a Plantas vs Zombies", "Daniel Reinosa")
+story.print_character_tet("Bienvenido a Plantas vs Zombies", "Daniel Reinosa")
 pause(2000)
 story.show_player_choices("play", "info")
 if story.check_last_answer("play"):
@@ -620,7 +620,7 @@ if story.check_last_answer("play"):
     info.set_score(50)
     info.start_countdown(60)
 if story.check_last_answer("info"):
-    story.print_character_text("El juego consitste de 3 elementos, soles para puntos,lanzadores para atacar y muros para defender.",
+    story.print_character_tet("El juego consitste de 3 elementos, soles para puntos,lanzadores para atacar y muros para defender.",
         "Daniel Reinosa")
 
 def on_update_interval():
@@ -711,7 +711,9 @@ def on_update_interval2():
                             . . . . . . . . . . . . . . . .
             """),
             SpriteKind.projectile)
+
         projectile.set_position(value2.x, value2.y)
+
         projectile.set_velocity(50, 0)
         projectile.lifespan = 2000
 game.on_update_interval(2000, on_update_interval2)
