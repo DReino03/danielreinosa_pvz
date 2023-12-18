@@ -1,5 +1,6 @@
 {
     "name": "DanielReinosa_PvZ",
+    "version": "0.0.1",
     "description": "",
     "dependencies": {
         "device": "*",
